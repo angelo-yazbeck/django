@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+{% include "mymenu.html" with me="TOBIAS" sponsor="W3SCHOOLS" %}
+
+<h1>Welcome</h1>
+
+<p>This is my webpage</p>
+
+{{mymembers}}
+<table border='1'>
+  
+    {% for x in mymembers %}
+      <tr>
+        <td>{{ x }}</td>
+          
+      </tr>
+    {% endfor %}
+  </table>
+
+{% include 'footer.html' %} 
+</body>
+</html>  
